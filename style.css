@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&family=Roboto:wght@400;500;700;900&display=swap');
+
+:root {
+    --Plarfair: 'Playfair Display', serif;
+    --Quicksand: 'Quicksand', sans-serif;
+    --Roboto: 'Roboto', sans-serif;
+    --dark: #3c393d;
+    --exDark: #2b2b2b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--Quicksand);
+}
+
+html {
+    scroll-behavior:smooth;
+}
+
+body {
+    line-height: 1.4;
+    color: var(--dark);
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 1.2rem;
+}
+
+/* Header css start */
+header {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./img/bg-image.jpg') center/cover no-repeat fixed;
+}
+
+header .navbar {
+    background-color: #333;
+}
+
+header .container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header .navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+header .logo a {
+    color: #fff;
+    text-decoration: none;
+    font-family: var(--Plarfair);
+    font-size: 30px;
+    font-weight: 500;
+    display: block;
+    text-transform: capitalize;
+}
+
+header .navbar-nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: var(--Quicksand);
+    font-size: 17px;
+    font-weight: 500;
+    display: inline-block;
+    transition: opacity .5s ease;
+}
+
+header .navbar-nav a:hover {
+    opacity: 0.7;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    margin-top: 9%;
+}
+
+.banner-title {
+    font-size: 5rem;
+    font-family: var(--Plarfair);
+    line-height: 1.2;
+    text-transform: capitalize;
+}
+
+.banner-title span {
+    font-family: var(--Plarfair);
+    color: var(--exDark);
+    text-transform: capitalize;
+}
+
+.banner p {
+    padding: 1rem 0 2rem 0;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    font-family: var(--Roboto);
+    font-weight: 300;
+    word-spacing: 2px;
+}
+
+.banner form {
+    background: #fff;
+    border-radius: 2rem;
+    padding: 0.6rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 1.4rem;
+    width: 38%;
+    margin: 0 auto;
+}
+
+.search-input {
+    font-family: var(--Roboto);
+    font-size: 1.2rem;
+    outline: 0;
+    padding: 0.6rem 0;
+    border: none;
+}
+
+.search-input::placeholder {
+    text-transform: capitalize;
+}
+
+.search-btn {
+    width: 40px;
+    font-size: 1.2rem;
+    color: var(--dark);
+    border: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+}
+
+/*end of header styling*/
+
+/* start design styling */
+.section {
+    padding: 4.5rem 0;
+}
+
+.section .title {
+    text-align: center;
+    padding-block-end: 1rem 0;
+    text-transform: capitalize;
+}
+
+.section .title h2 {
+    font-family: var(--Plarfair);
+    font-size: 2.4rem;
+}
+
+.design-content {
+    margin: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.design-item {
+    cursor: pointer;
+    margin: 0;
+}
+
+.design-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.design-img::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.design-img img {
+    transition: all .5s ease;
+}
+
+.design-item:hover img{
+    transform: scale(1.2);
+}
+
+.design-img span:first-of-type{
+    position: absolute;
+    z-index: 1;
+    content: "";
+    top: 10px;
+    left: 10px;
+    background: var(--dark);
+    color: #fff;
+    padding: 0.25rem 1rem;
+}
+
+.design-img span:last-of-type{
+    position: absolute;
+    z-index: 1;
+    content: "";
+    bottom: 10px;
+    right: 10px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.design-title {
+    padding: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    text-transform: capitalize;
+}
+
+.design-title a {
+    color: var(--dark);
+    text-decoration: none;
+    font-family: var(--Plarfair);
+}
+/* end of design styling */
+
+/* Start of blog styling */
+.blog {
+    background-color: #c9c9c9;
+    padding: 4.5rem 0;
+}
+
+.blog .title {
+    text-align: center;
+    padding-block-end: 1rem 0;
+    text-transform: capitalize;
+}
+
+.blog .title h2 {
+    font-family: var(--Plarfair);
+    font-size: 2.4rem;
+}
+
+.blog-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.blog-img {
+    position: relative;
+}
+
+.blog-img span {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: var(--dark);
+    color: #fff;
+    font-size: 1.4rem;
+    padding: 0.3rem 0.6rem;
+}
+
+.blog-text {
+    margin: 2.2rem 0;
+    padding: 0 1rem;
+}
+
+.blog-text span {
+    font-weight: 300;
+    display: block;
+    padding-bottom: 0.5rem;
+}
+
+.blog-text h2 {
+    font-family: var(--Plarfair);
+    padding: 1rem 0;
+    font-size: 1.65rem;
+    font-weight: 500;
+}
+
+.blog-text p {
+    font-weight: 300;
+    font-size: 1.1rem;
+    opacity: 0.9;
+    padding-bottom: 1.2rem;
+}
+
+.blog-text a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-family:var(--Roboto);
+    color: #fff;
+    background-color: var(--dark);
+    padding: 0.55rem 1.2rem;
+    transition: all .5s ease;
+}
+
+.blog-text a:hover {
+    cursor: pointer;
+    background-color: var(--exDark);
+}
+/* End of blog styling */
+
+
+/* Start of about styling */
+.about {
+    padding: 4.5rem 0;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3rem;
+    align-items: center;
+}
+
+.about-text {
+    margin: 2rem;
+}
+
+.about-text .title {
+    text-align: center;
+}
+
+.about-text .title h2 {
+    font-family: var(--Plarfair);
+    font-size: 2rem;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    padding: 0.6rem 0;
+    opacity: .8;
+}
+
+.about-text .title p {
+    text-transform: uppercase;
+}
+/* End of about styling */
+
+/* Start of footer */
+footer{
+    background-color: var(--dark);
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.4rem;
+}
+
+.social-links a {
+    text-decoration: none;
+    border: 2px solid #fff;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 .3rem;
+    transition: all .3s ease;
+}
+
+.social-links a:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: var(--dark);
+}
+
+footer span{
+    margin-top: 1rem;
+    display: block;
+    font-family: var(--Plarfair);
+    letter-spacing: 2px;
+}
+/* End of footer */
