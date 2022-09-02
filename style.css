@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Fredoka+One&family=Lobster&family=Lora:wght@400;500;600&family=Merriweather:wght@300;400;700;900&display=swap');
+
+body{
+    font-family: sans-serif;
+}
+
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url(./img/bg-img.jpeg) no-repeat fixed;
+    height: 100vh;
+    background-size:cover;
+    background-position-y: -72px;
+}
+
+.container {
+    width: 89%;
+    margin: 0 auto;
+}
+
+.navigation {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    padding-top: 20px;
+}
+
+.navnav a{
+    color: #fff;
+}
+
+.first-navnav a{
+    color: #ff7300;
+    font-size: 40px;
+}
+
+.second-navnav {
+    padding-top: 17px;
+}
+
+.second-navnav a {
+    margin-right: 100px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all .5s ease;
+}
+
+.second-navnav a:hover {
+    color: #f5c095;
+}
+
+.third-navnav input {
+    padding: 10px;
+    background-color: transparent;
+    border: 2px solid #ff7300;
+    border-radius: 10px;
+    color: #fff;
+    width: 150px;
+    outline: none;
+}
+
+.third-navnav input::placeholder{
+    color: #fff;
+    font-size: 17px;
+}
+
+.third-navnav a {
+    background-color: #ff7300;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.first_section_father {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    padding-top: 150px;
+}
+
+.section .left_child {
+    width: 70%;
+}
+
+.section .left_child h1,h2{
+    line-height: 75px;
+    font-family: 'Lora', serif;;
+}
+
+.section .left_child h2{
+    color: #fff;
+    font-size: 50px;
+}
+.section .left_child h1{
+    color: #ff7300;
+    font-size: 65px;
+}
+
+.section .left_child p {
+    color: #fff;
+    letter-spacing: 1px;
+    padding-top: 5px;
+    line-height: 28px;
+}
+
+.section .left_child button {
+    margin-top: 30px;
+    width: 150px;
+    padding: 8px;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color:#ff7300;
+    outline: none;
+    border: none;
+    transition: all .3s ease;
+}
+
+.section .left_child button:hover {
+    background-color: #fff;
+    color: #ff7300;
+}
+
+.section .right_child {
+    height: 400px;
+    width: 65%;
+    background:rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.section .right_child button {
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+}
+
+.section .right_child input {
+    width: 92%;
+    padding: 10px;
+    margin: 20px 0;
+    outline: none;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #ff7300;
+    color: #fff;
+}
+
+.section .right_child input::placeholder{
+    color: #fff;
+    font-size: 15px;
+}
+
+.right_child .p-title{
+    margin-top: 10px;
+    background-color: #fff;
+    color: #ff7300;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.right_child button {
+    background-color: #ff7300;
+    color: #000;
+    font-weight: bold;
+    font-size: 18px;
+    transition: all .3s ease;
+}
+
+.right_child button:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: #ff7300;
+}
+
+.right_child .p-accout{
+    padding: 1px 0;
+}
+
+.fab{
+    color: #fff;
+    padding: 10px 8px;
+}
+
+.section-two .father {
+    display: flex;
+    
+}
