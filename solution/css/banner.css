@@ -1,0 +1,36 @@
+.banner-section{
+    height: 600px;
+    background-image: url('../img/watches.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: 1000px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #999999;
+}
+.text-box{
+    width: 450px;
+}
+.banner-title{
+    font-size: 45px;
+    margin-bottom: 60px;
+}
+.banner-text{
+    border-left: 3px solid #999999;
+    color: #999999;
+    padding: 5px 30px;
+}
+.banner-link{
+    text-transform: uppercase;
+    font-weight: 500;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: #EA625C;
+    margin-top: 40px;
+    padding: 14px 20px;
+
+}
+.banner-link:hover{
+    background-color: #dd463e;
+}
