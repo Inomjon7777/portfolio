@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    background-color: lightskyblue;
+}
+
+.svetafor {
+    width: 115px;
+    margin: 20px auto;
+    background-color: #000;
+    padding: 10px;
+    margin-bottom: 0%;
+    border-radius: 5px;
+}
+
+.sariq_chiroq {
+    background-color: yellow;
+    height: 100px;
+    width: 100px;
+    border: solid 5px black;
+    border-radius: 50%;
+}
+
+.qizil_chiroq {
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    border: solid 5px black;
+    border-radius: 50%;
+}
+
+.yashil_chiroq {
+    background-color: green;
+    height: 100px;
+    width: 100px;
+    border: solid 5px black;
+    border-radius: 50%;
+}
+
+.oyoq {
+    height: 390px;
+    width: 45px;
+    margin: 0 auto;
+    background-color:grey;
+    border: 2px solid #000;
+    border-top-style: none;
+}
