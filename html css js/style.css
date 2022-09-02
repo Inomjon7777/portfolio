@@ -1,0 +1,79 @@
+body {
+    background-color: #363e8a;
+}
+
+.Account {
+    position: relative;
+    width: 250px;
+    height: 380px;
+    border: 1px solid #fff;
+    background-color: #fff;
+    margin-top: 10%;
+    left: 45%;
+    padding-bottom: 30px
+}
+
+.Account h3 {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 25px;
+    margin-top: 8%;
+    margin-bottom: 0%;
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+
+.Account p {
+    margin-top: 3%;
+    text-align: center;
+    font-family: inherit;
+    margin-left: 0;
+    width: 100%;
+}
+
+.Account input {
+    width: 90%;
+    margin: 1.8% 3%;
+}
+
+.Account label {
+    margin-left: 3%;
+}
+
+.Account button {
+    width: 95%;
+    height: 28px;
+    margin-top: 2%;
+    margin-left: 2%;
+    background-color: #32a86f;
+    color: #fff;
+    margin-bottom: 0%;
+}
+
+.last {
+    font-size: 11px;
+    font-family: sans-serif;
+    text-decoration: none;
+    padding-top: 3px;
+}
+
+.last a {
+    text-decoration: none;
+}
+
+.Account button:hover {
+    background-color: #067d44;
+}
+
+.footer {
+    margin-top: 9%;
+}
+
+.footer p {
+    color: #fff;
+}
+
+.footer a {
+    color: #32a86f;
+}
