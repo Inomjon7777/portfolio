@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        async function showAvatar() {
+            let userName = document.getElementById('userName').value;
+            let githubUrl = `https://api.github.com/users/${userName}`;
+            let githubResponse = await fetch (githubUrl);
+            let githubUser = await githubResponse.json();
+            document.getElementById("userData").innerHTML = "";
+            let img = document.createElement('img');
+            img.src = githubUser.avatar_url;
+            document.getElementById('userData').append(img);
+            document.getElementById('userData').append(img);
+            document.getElementById('url').innerHTML = githubUrl;
+        }
+    </script>
+    <html>
+        Github foydalanuvchisi nomini:
+        <input type="text" id="userName">
+        <button onclick="showAvatar()">Avatarni ko'rsat</button>
+        <p></p>
+        <div id="userData"></div>
+        <p id="url"></p>
+    </html>
+</body>
+
+</html>
