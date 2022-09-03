@@ -1,0 +1,65 @@
+/* style for universal selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* style for body */
+body {
+    font-family: sans-serif;
+    height: 100vh;
+}
+
+/* style for start-zone */
+.start-zone {
+    background: url(./images/bg.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+/* style for form */
+.form {
+    margin-top: 50px;
+}
+
+/* style for input and button */
+input,
+button {
+    padding: 10px 20px;
+    color: dodgerblue;
+    border: 2px solid dodgerblue;
+    font-weight: bold;
+    font-style: italic;
+    border-radius: 20px;
+    outline: dodgerblue;
+    transition: all .2s ease;
+    background-color: #fff;
+}
+
+input::placeholder {
+    color: dodgerblue;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:active {
+    transform: scale(.9);
+}
+
+/* style for hidden class */
+.hidden {
+    display: none;
+}
+
+/* some style for canvas */
+canvas {
+    background-color: red;
+}
