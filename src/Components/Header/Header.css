@@ -1,0 +1,33 @@
+.searchbar {
+  height: max-content;
+  border: 1px solid;
+  border-radius: 20px;
+  padding-left: 20px;
+}
+.searchbar input {
+  border: none;
+  outline: none;
+}
+.searchbar button {
+  border-radius: 50%;
+  border: 1px solid;
+}
+.badge-light {
+  background: #fff;
+  color: #000;
+  margin-left: 10px;
+  border-radius: 50%;
+  padding: 3px;
+}
+.katalog {
+  border: 1px solid;
+  border-radius: 20px;
+  padding: 7px 20px;
+  background: transparent;
+}
+.korzina {
+  border: 1px solid;
+  border-radius: 20px !important;
+  padding: 7px 20px;
+  background: red;
+}
