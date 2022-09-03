@@ -1,0 +1,55 @@
+.appearances {
+  background: #17161c;
+  padding: 4rem 0rem;
+  &__container {
+    &__title-box {
+      &__title {
+        text-align: center;
+        margin: 0;
+        color: #fe805d;
+        font-family: "Times New Roman", Times, serif;
+        font-size: 3rem;
+        font-weight: normal;
+        padding-top: 4rem;
+      }
+      &__description {
+        text-align: center;
+        color: #fff;
+        line-height: 30px;
+        padding-bottom: 2rem;
+      }
+    }
+    &__boxes {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 3rem;
+      &__box {
+        width: 900px;
+        padding: 3rem;
+        border: 1px solid #fff;
+        color: #fff;
+        text-align: center;
+        &__title {
+          font-size: 23px;
+          line-height: 40px;
+        }
+        &__button {
+          padding: 0.5rem 4rem;
+          border-radius: 2rem;
+          border: 1px solid #fe805d;
+          background: transparent;
+          color: #fe805d;
+          font-size: 1rem;
+          cursor: pointer;
+          transition: all 0.5s ease;
+          &:hover {
+            background: #fe805d;
+            color: #17161c;
+          }
+        }
+      }
+    }
+  }
+}

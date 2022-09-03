@@ -1,0 +1,13 @@
+.footer {
+  &__text {
+    text-align: center;
+    color: #000;
+    background: #fe805d;
+    margin: 0;
+    padding: 1rem 0;
+    font-size: 14px;
+    &__href {
+      color: #000;
+    }
+  }
+}

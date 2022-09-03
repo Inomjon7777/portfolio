@@ -1,0 +1,59 @@
+//banner joylashuvi o'zgarmas bo'lgani uchun placeholder selector ishlatildi
+%banner-layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+//banner section ga style berildi
+.banner {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  z-index: 1000;
+  &__container {
+    padding: 0rem 4rem;
+    &__boxes {
+      @extend %banner-layout;
+      &__logo-box {
+        @extend %banner-layout;
+        &__text {
+          margin-right: 2.5rem;
+        }
+        &__laptop-logo {
+          padding-right: 1.5rem;
+        }
+        &__phone-logo {
+          border-left: 1px solid;
+          padding-left: 1.5rem;
+        }
+      }
+      &__text-box {
+        @extend %banner-layout;
+        &__link {
+          margin: 0rem 2rem;
+          color: #000;
+          &:hover {
+            color: #0783ff;
+          }
+        }
+        &__button {
+          padding: 0.8rem 2rem;
+          color: #fff;
+          background: #0783ff;
+          border: 1px solid #0783ff;
+          border-radius: 2rem;
+          font-size: 1rem;
+          cursor: pointer;
+          transition: all 0.5s ease;
+          &:hover {
+            background: #fff;
+            color: #0783ff;
+          }
+          &:active {
+            transform: scale(0.9);
+          }
+        }
+      }
+    }
+  }
+}

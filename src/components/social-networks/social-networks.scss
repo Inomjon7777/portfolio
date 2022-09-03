@@ -1,0 +1,20 @@
+.social-networks {
+  &__twitter-logo,
+  &__facebook-logo {
+    cursor: pointer;
+    position: fixed;
+    font-size: 0.8rem;
+    top: 25rem;
+    left: 1.5rem;
+    width: 25px;
+    height: 25px;
+    background: #fff;
+    color: #000;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+  }
+  &__facebook-logo {
+    top: 28rem;
+  }
+}

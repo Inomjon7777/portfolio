@@ -1,0 +1,33 @@
+.hero {
+  margin-top: 2rem;
+
+  &__container {
+    padding: 0rem 17rem;
+    &__boxes {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding-top: 3rem;
+      &__img-box {
+        &__img {
+          object-fit: contain;
+          width: 290px;
+          height: 290px;
+        }
+      }
+      &__text-box {
+        &__title {
+          margin: 0;
+          font-size: 5.3rem;
+          color: #fe805d;
+          font-style: normal;
+          font-family: "Times New Roman", Times, serif;
+          font-weight: normal;
+        }
+        &__description {
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+}

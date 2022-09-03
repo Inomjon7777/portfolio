@@ -1,0 +1,45 @@
+.praise {
+  color: #fff;
+  background: #212130;
+  padding-bottom: 6rem;
+  &__container {
+    padding: 0rem 8rem;
+    &__title {
+      text-align: center;
+      margin: 0;
+      color: #ff7f5d;
+      padding: 4rem 0rem;
+      font-family: "Times New Roman", Times, serif;
+      font-size: 3rem;
+      font-weight: normal;
+    }
+    &__boxes {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      text-align: center;
+      gap: 8rem;
+      &__text-box {
+        &__text {
+          line-height: 30px;
+          margin-bottom: 3rem;
+        }
+        &__little-text {
+          font-size: 16px;
+          color: #ff7f5d;
+          line-height: 25px;
+        }
+        &__line-box {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          &__line {
+            width: 8rem;
+            height: 1px;
+            background: #fff;
+          }
+        }
+      }
+    }
+  }
+}

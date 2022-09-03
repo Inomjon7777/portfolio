@@ -1,0 +1,30 @@
+.nav {
+  &__container {
+    padding: 0rem 8rem;
+    &__boxes {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid;
+      padding-bottom: 1rem;
+      &__title {
+        font-family: "Times New Roman", Times, serif;
+        cursor: pointer;
+      }
+      &__ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        list-style: none;
+        gap: 4.1rem;
+        &__li {
+          cursor: pointer;
+          transition: all 0.2s ease;
+          &:hover {
+            color: #fe805d;
+          }
+        }
+      }
+    }
+  }
+}
