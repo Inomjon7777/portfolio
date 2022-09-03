@@ -1,0 +1,16 @@
+@mixin flexbox($d-t: flex, $j-c: space-between, $a-i: center) {
+  display: $d-t;
+  justify-content: $j-c;
+  align-items: $a-i;
+  content: "";
+}
+
+@mixin gridbox($d-t: grid, $g-t-c: 1fr, $p-a: center) {
+  display: $d-t;
+  grid-template-columns: $g-t-c;
+  place-items: $p-a;
+}
+@mixin gridTablet($d-t: grid, $g-t-c: 1fr) {
+  display: $d-t;
+  grid-template-columns: $g-t-c;
+}

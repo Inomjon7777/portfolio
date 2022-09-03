@@ -1,0 +1,117 @@
+// nav
+.navigation {
+  @include flexbox;
+}
+.navbar {
+  p {
+    margin: 0;
+  }
+  &__phone {
+    @include flexbox;
+  }
+  &__earth {
+    @include flexbox;
+  }
+}
+// header
+.header {
+  &__boxes {
+    @include flexbox;
+  }
+}
+// header-down
+.header-down {
+  &__boxes {
+    @include flexbox;
+  }
+  &__box__img {
+    @include flexbox;
+    column-gap: 10px;
+  }
+}
+// choose
+.choose {
+  &__title {
+    @include flexbox(flex, center, center);
+    flex-direction: column;
+  }
+  &__boxes {
+    @include gridbox(grid, 1fr 1fr 1fr, center);
+    gap: 30px;
+  }
+  &__box {
+    @include flexbox;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+// ambassador
+.ambassador {
+  &__boxes {
+    @include flexbox;
+  }
+}
+// accordion
+.accordion {
+  &__title {
+    @include flexbox;
+    flex-direction: column;
+  }
+}
+// accordion__footer
+.accordion__footer {
+  &-box {
+    @include flexbox;
+    flex-direction: column;
+  }
+}
+.accordion-down-text {
+  @include flexbox;
+}
+// our-clients
+.our-clients {
+  margin-top: 120px;
+  &__boxes {
+    @include flexbox;
+    margin-top: 55px;
+    margin-bottom: 130px;
+  }
+}
+// hear
+.hear {
+  &__title {
+    @include flexbox(flex, center, center);
+    flex-direction: column;
+  }
+  &__boxes {
+    display: flex;
+    column-gap: 80px;
+  }
+}
+// partner
+.partner {
+  &__box {
+    @include flexbox;
+    flex-direction: column;
+  }
+}
+//company
+.company {
+  &__title {
+    @include flexbox;
+    flex-direction: column;
+  }
+}
+// application
+.application {
+  &__boxes {
+    @include flexbox;
+  }
+}
+
+// footer
+.footer {
+  &__boxes {
+    @include flexbox(flex, space-between, flex-start);
+  }
+}
