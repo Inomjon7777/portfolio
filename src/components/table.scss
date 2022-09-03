@@ -1,0 +1,37 @@
+th {
+  min-width: 10rem;
+  padding: 1rem;
+  border-bottom: 1px solid #eeeeee;
+  color: #1c1c1c;
+  position: sticky;
+  background-color: #fcfcfc;
+  z-index: 500;
+  top: 0;
+  &:first-child {
+    position: sticky;
+    left: 0;
+    z-index: 1100;
+  }
+  &:nth-child(2) {
+    position: sticky;
+    z-index: 1150;
+    left: 185px;
+  }
+}
+
+td {
+  border-bottom: 1px solid #ddd;
+  padding: 1.5rem 0.4rem;
+  min-width: 150px;
+  background-color: #fcfcfc;
+  &:first-child {
+    position: sticky;
+    left: 0;
+    z-index: 100;
+  }
+  &:nth-child(2) {
+    position: sticky;
+    z-index: 100;
+    left: 185px;
+  }
+}
