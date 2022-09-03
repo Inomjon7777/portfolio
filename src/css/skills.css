@@ -1,0 +1,309 @@
+/* skills started */
+.skills-title {
+  text-align: center;
+  color: #000;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 80px;
+}
+
+.skills-boxes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas:
+    "speaking writing reading"
+    "speaking listening listening";
+  gap: 18px;
+}
+
+.speaking-box {
+  grid-area: speaking;
+}
+.writing-box {
+  grid-area: writing;
+}
+.reading-box {
+  grid-area: reading;
+}
+.listening-box {
+  grid-area: listening;
+}
+
+.speaking-box,
+.writing-box,
+.reading-box,
+.listening-box {
+  background-color: #f5f5f5;
+  padding: 43px;
+}
+.speaking-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.writing-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.reading-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.listening-box {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+.speaking-box-word-title,
+.writing-box-word-title,
+.reading-box-word-title,
+.listening-box-word-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 80px;
+  color: #263238;
+}
+.speaking-box-word-description,
+.writing-box-word-description,
+.reading-box-word-description,
+.listening-box-word-description {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #8f95a5;
+}
+
+.speaking-box-word-btn,
+.writing-box-word-btn,
+.reading-box-word-btn,
+.listening-box-word-btn {
+  padding: 17px 64px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #ffffff;
+  background: #263238;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  transform: scale(1);
+}
+.speaking-box-word-btn:hover,
+.writing-box-word-btn:hover,
+.reading-box-word-btn:hover,
+.listening-box-word-btn:hover {
+  background-color: #fff;
+  color: #263238;
+  transform: scale(1.05);
+}
+.speaking-box-word-btn:active,
+.writing-box-word-btn:active,
+.reading-box-word-btn:active,
+.listening-box-word-btn:active {
+  transform: scale(0.9);
+}
+
+.speaking-box-banner-img {
+  width: 390px;
+  height: 390px;
+}
+.writing-box-banner-img {
+  width: 293px;
+  height: 293px;
+}
+.reading-box-banner-img {
+  width: 371px;
+  height: 247px;
+}
+.listening-box-banner-img {
+  width: 382px;
+  height: 255px;
+}
+/* skills ended */
+
+/* response 992px */
+@media only screen and (max-width: 992px) {
+  .skills > .container {
+    padding: 0 31px;
+  }
+  .skills-title {
+    font-weight: 600;
+    font-size: 36px;
+  }
+  .speaking-box-banner-img {
+    width: 260px;
+    height: 260px;
+  }
+  .writing-box-banner-img {
+    width: 205px;
+    height: 205px;
+  }
+  .reading-box-banner-img {
+    width: 243px;
+    height: 162px;
+  }
+  .listening-box-banner-img {
+    width: 254px;
+    height: 169px;
+  }
+  .speaking-box-word-title,
+  .writing-box-word-title,
+  .reading-box-word-title,
+  .listening-box-word-title {
+    font-weight: 600;
+    font-size: 22px;
+  }
+  .speaking-box-word-description,
+  .writing-box-word-description,
+  .reading-box-word-description,
+  .listening-box-word-description {
+    font-size: 14px;
+  }
+  .speaking-box,
+  .writing-box,
+  .reading-box,
+  .listening-box {
+    padding: 20px;
+  }
+  .speaking-box-word-btn,
+  .writing-box-word-btn,
+  .reading-box-word-btn,
+  .listening-box-word-btn {
+    padding: 16px 41px;
+  }
+}
+
+/* response 992px */
+@media only screen and (max-width: 768px) {
+  .skills > .container {
+    padding: 0 39px;
+  }
+  .skills-title {
+    font-weight: 600;
+    font-size: 30px;
+  }
+  .speaking-box-banner-img {
+    width: 214px;
+    height: 214px;
+  }
+  .writing-box-banner-img {
+    width: 200px;
+    height: 200px;
+  }
+  .reading-box-banner-img {
+    width: 216px;
+    height: 144px;
+  }
+  .listening-box-banner-img {
+    width: 202px;
+    height: 134px;
+  }
+  .speaking-box-word-title,
+  .writing-box-word-title,
+  .reading-box-word-title,
+  .listening-box-word-title {
+    font-weight: 600;
+    font-size: 20px;
+  }
+  .speaking-box-word-description,
+  .writing-box-word-description,
+  .reading-box-word-description,
+  .listening-box-word-description {
+    font-weight: 400;
+    font-size: 13px;
+  }
+  .speaking-box,
+  .writing-box,
+  .reading-box,
+  .listening-box {
+    padding: 10px;
+  }
+  .speaking-box-word-btn,
+  .writing-box-word-btn,
+  .reading-box-word-btn,
+  .listening-box-word-btn {
+    padding: 13px 38px;
+  }
+
+  .skills-boxes {
+    grid-template-columns: repeat(3, 211px);
+  }
+}
+
+/* response 576px */
+@media only screen and (max-width: 576px) {
+  .skills > .container {
+    padding: 0 33px;
+  }
+  .skills-title {
+    font-weight: 600;
+    font-size: 30px;
+  }
+  .speaking-box-banner-img {
+    width: 214px;
+    height: 214px;
+  }
+  .writing-box-banner-img {
+    width: 200px;
+    height: 200px;
+  }
+  .reading-box-banner-img {
+    width: 216px;
+    height: 144px;
+  }
+  .listening-box-banner-img {
+    width: 202px;
+    height: 134px;
+  }
+  .speaking-box-word-title,
+  .writing-box-word-title,
+  .reading-box-word-title,
+  .listening-box-word-title {
+    font-weight: 600;
+    font-size: 20px;
+  }
+  .speaking-box-word-description,
+  .writing-box-word-description,
+  .reading-box-word-description,
+  .listening-box-word-description {
+    font-weight: 400;
+    font-size: 13px;
+  }
+  .speaking-box,
+  .writing-box,
+  .reading-box,
+  .listening-box {
+    padding: 10px;
+  }
+  .speaking-box-word-btn,
+  .writing-box-word-btn,
+  .reading-box-word-btn,
+  .listening-box-word-btn {
+    padding: 13px 38px;
+  }
+
+  .skills-boxes {
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    grid-template-areas:
+      "speaking writing"
+      "reading listening";
+    gap: 18px;
+  }
+  .listening-box {
+    display: flex;
+    flex-direction: column;
+  }
+  .writing-box {
+    display: block;
+  }
+}

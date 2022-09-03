@@ -1,0 +1,174 @@
+/* pricing section started */
+.pricing {
+  margin: 100px 0;
+}
+.pricing-boxes {
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
+  gap: 70px;
+}
+
+.pricing-box-1,
+.pricing-box-2,
+.pricing-box-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pricing-title {
+  text-align: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 80px;
+}
+.pricing-box-1-word-description,
+.pricing-box-2-word-description,
+.pricing-box-3-word-description {
+  color: #8f95a5;
+}
+
+.pricing-box-1-word-price,
+.pricing-box-2-word-price,
+.pricing-box-3-word-price {
+  font-style: normal;
+  font-weight: 400;
+  color: #546269;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: #eeeeee;
+  padding: 5px;
+  width: max-content;
+  border-radius: 5px;
+}
+
+.pricing-box-1-word-price-bold,
+.pricing-box-2-word-price-bold,
+.pricing-box-3-word-price-bold {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  color: #263238;
+}
+/* pricing section ended */
+
+/* response 992px */
+@media only screen and (max-width: 992px) {
+  .pricing > .container {
+    padding: 0 31px;
+  }
+  .pricing-title {
+    font-weight: 600;
+    font-size: 36px;
+  }
+  .pricing-box-1-banner-img {
+    width: 222px;
+    height: 222px;
+  }
+  .pricing-box-2-banner-img {
+    width: 267px;
+    height: 195px;
+  }
+  .pricing-box-3-banner-img {
+    width: 224.79px;
+    height: 200.09px;
+  }
+  .pricing-box-1-word-title,
+  .pricing-box-2-word-title,
+  .pricing-box-3-word-title {
+    font-weight: 600;
+    font-size: 22px;
+  }
+  .pricing-box-1-word-description,
+  .pricing-box-2-word-description,
+  .pricing-box-3-word-description {
+    font-weight: 400;
+    font-size: 16px;
+  }
+  .pricing-boxes {
+    display: grid;
+    grid-template-columns: repeat(3, 265px);
+    gap: 50px;
+  }
+}
+/* response 768px */
+@media only screen and (max-width: 768px) {
+  .about-us .container {
+    padding: 0 39px;
+  }
+  .about-us-word-title {
+    font-weight: 600;
+    font-size: 30px;
+  }
+  .about-us-word-description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .about-us-word-number-box-1-title,
+  .about-us-word-number-box-2-title,
+  .about-us-word-number-box-3-title {
+    font-weight: 600;
+    font-size: 22px;
+  }
+  .about-us-word-number-box-1-word,
+  .about-us-word-number-box-2-word,
+  .about-us-word-number-box-3-word {
+    font-weight: 400;
+    font-size: 13px;
+  }
+  .about-us-banner > img {
+    width: 295px;
+    height: 295px;
+  }
+  .pricing-boxes {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    gap: 50px;
+  }
+}
+/* response 576px */
+@media only screen and (max-width: 576px) {
+  .about-us .container {
+    padding: 0 33px;
+  }
+  .about-us-word-title {
+    font-weight: 600;
+    font-size: 30px;
+  }
+  .about-us-word-description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .about-us-word-number-box-1-title,
+  .about-us-word-number-box-2-title,
+  .about-us-word-number-box-3-title {
+    font-weight: 600;
+    font-size: 22px;
+  }
+  .about-us-word-number-box-1-word,
+  .about-us-word-number-box-2-word,
+  .about-us-word-number-box-3-word {
+    font-weight: 400;
+    font-size: 13px;
+  }
+  .about-us-banner > img {
+    width: 295px;
+    height: 295px;
+  }
+  .pricing-boxes {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    place-items: center;
+  }
+  .pricing-box-1-word-price,
+  .pricing-box-2-word-price,
+  .pricing-box-3-word-price {
+    margin-left: 130px;
+  }
+}

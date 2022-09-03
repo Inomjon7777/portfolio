@@ -1,0 +1,151 @@
+/* about-us started */
+.about-us-boxes,
+.about-us-word-number-boxes {
+  display: flex;
+  align-items: center;
+}
+
+.about-us-word-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 80px;
+  color: #000000;
+}
+.about-us-word-description {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #8f95a5;
+}
+.about-us-word-number-box-1,
+.about-us-word-number-box-2,
+.about-us-word-number-box-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.about-us-word-number-box-1-title,
+.about-us-word-number-box-2-title,
+.about-us-word-number-box-3-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  color: #2a3246;
+}
+.about-us-word-number-box-1-word,
+.about-us-word-number-box-2-word,
+.about-us-word-number-box-3-word {
+  font-weight: 400;
+  font-size: 20px;
+  color: #8f95a5;
+}
+.about-us-word-number-boxes {
+  display: flex;
+  justify-content: space-between;
+}
+.about-us-boxes {
+  gap: 100px;
+}
+.about-us {
+  margin: 100px 0;
+}
+/* about-us ended */
+
+/* response 992px */
+@media only screen and (max-width: 992px) {
+  .about-us .container {
+    padding: 0 31px;
+  }
+  .about-us-word-title {
+    font-size: 36px;
+  }
+  .about-us-word-description {
+    font-weight: 400;
+    font-size: 16px;
+  }
+  .about-us-word-number-box-1-title,
+  .about-us-word-number-box-2-title,
+  .about-us-word-number-box-3-title {
+    font-weight: 600;
+    font-size: 30px;
+  }
+  .about-us-word-number-box-1-word,
+  .about-us-word-number-box-2-word,
+  .about-us-word-number-box-3-word {
+    font-weight: 400;
+    font-size: 16px;
+  }
+  .about-us-banner > img {
+    width: 336px;
+    height: 336px;
+  }
+}
+/* response 768px */
+@media only screen and (max-width: 768px) {
+  .about-us .container {
+    padding: 0 39px;
+  }
+  .about-us-word-title {
+    font-weight: 600;
+    font-size: 30px;
+  }
+  .about-us-word-description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .about-us-word-number-box-1-title,
+  .about-us-word-number-box-2-title,
+  .about-us-word-number-box-3-title {
+    font-weight: 600;
+    font-size: 22px;
+  }
+  .about-us-word-number-box-1-word,
+  .about-us-word-number-box-2-word,
+  .about-us-word-number-box-3-word {
+    font-weight: 400;
+    font-size: 13px;
+  }
+  .about-us-banner > img {
+    width: 295px;
+    height: 295px;
+  }
+}
+/* response 768px */
+@media only screen and (max-width: 576px) {
+  .about-us .container {
+    padding: 0 33px;
+  }
+  .about-us-word-title {
+    font-weight: 600;
+    font-size: 30px;
+  }
+  .about-us-word-description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .about-us-word-number-box-1-title,
+  .about-us-word-number-box-2-title,
+  .about-us-word-number-box-3-title {
+    font-weight: 600;
+    font-size: 22px;
+  }
+  .about-us-word-number-box-1-word,
+  .about-us-word-number-box-2-word,
+  .about-us-word-number-box-3-word {
+    font-weight: 400;
+    font-size: 13px;
+  }
+  .about-us-banner > img {
+    width: 295px;
+    height: 295px;
+  }
+  .about-us-boxes {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}

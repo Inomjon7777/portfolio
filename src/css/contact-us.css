@@ -1,0 +1,107 @@
+/* contact-us started */
+.contact-us {
+  margin: 100px 0;
+}
+.contact-us-boxes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.contact-us-word-title > h1 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  color: #000000;
+}
+
+.contact-us-word-description > p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #8f95a5;
+}
+
+.contact-us-word-form > input {
+  padding: 25px 82px 25px 20px;
+  border: 1px solid #8f95a5;
+  border-radius: 10px;
+}
+.contact-us-word-form > button {
+  padding: 25px 82px;
+  background: #263238;
+  border-radius: 10px;
+  color: #fff;
+  margin-left: 12px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.contact-us-word-form > button:hover {
+  background-color: #fff;
+  color: #263238;
+  transform: scale(1.05);
+}
+.contact-us-word-form > button:active {
+  transform: scale(1);
+}
+/* contact-us ended */
+
+/* response 992px */
+@media only screen and (max-width: 992px) {
+  .contact-us > .container {
+    padding: 0 31px;
+  }
+  .contact-us-banner-img {
+    width: 291.73px;
+    height: 259.75px;
+  }
+  .contact-us-word-title > h1 {
+    font-weight: 600;
+    font-size: 36px;
+  }
+  .contact-us-word-description > p {
+    font-weight: 400;
+    font-size: 16px;
+  }
+  .contact-us-word-form > input {
+    padding: 16px 28px;
+  }
+  .contact-us-word-form > button {
+    padding: 16px 68px;
+  }
+}
+/* response 768px */
+@media only screen and (max-width: 768px) {
+  .contact-us > .container {
+    padding: 0 39px;
+  }
+  .contact-us-banner-img {
+    width: 217.86px;
+    height: 194.12px;
+  }
+  .contact-us-word-title > h1 {
+    font-weight: 600;
+    font-size: 30px;
+  }
+  .contact-us-word-description > p {
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .contact-us-word-form > input {
+    padding: 16px 24px;
+  }
+  .contact-us-word-form > button {
+    padding: 16px 20px;
+  }
+}
+/* response 768px */
+@media only screen and (max-width: 576px) {
+  .contact-us.container {
+    padding: 0 33px;
+  }
+  .contact-us-boxes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
