@@ -1,0 +1,55 @@
+%banner-placeholder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banner {
+  box-shadow: 0 4px 2px -2px #c2c2c2;
+  &__container {
+    padding: 0 4rem;
+    &__boxes {
+      @extend %banner-placeholder;
+      &__logo-box {
+        @extend %banner-placeholder;
+        &__title {
+          margin-right: 4rem;
+          cursor: pointer;
+        }
+        &__laptop-logo {
+          padding-right: 2rem;
+          cursor: pointer;
+        }
+        &__phone-logo {
+          border-left: 1px solid;
+          padding-left: 2rem;
+          cursor: pointer;
+        }
+      }
+      &__text-box {
+        @extend %banner-placeholder;
+        &__text {
+        }
+        &__href {
+          margin: 0 2rem;
+          color: #000;
+          &:hover {
+            color: rgb(2, 110, 218);
+          }
+        }
+        &__button {
+          padding: 0.8rem 2rem;
+          border-radius: 2rem;
+          border: 1px solid rgb(2, 110, 218);
+          background: rgb(2, 110, 218);
+          color: #fff;
+          cursor: pointer;
+          transition: all 0.4s ease;
+          &:hover {
+            opacity: 0.7;
+          }
+        }
+      }
+    }
+  }
+}
