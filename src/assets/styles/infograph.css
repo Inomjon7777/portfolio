@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;1,600&display=swap");
+
+*,
+ul,
+p {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  outline: none;
+  font-family: "Rubik", sans-serif;
+}
+
+.infograph {
+  padding: 70px 0;
+}
+
+.infograph__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.infograph__map {
+  width: 60%;
+  width: 100%;
+  margin: 0;
+  padding: 20px 50px;
+  position: relative;
+}
+
+.infograph__map-baackitem {
+  position: absolute;
+  top: 0;
+  left: 50px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 1px solid #4f5a6e;
+  background: #ff6600;
+  transition: 0.3s;
+  border-radius: 10px;
+  animation-name: fade;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  z-index: 8;
+}
+
+.infograph__map-baackitem img {
+  filter: brightness(0) invert(1);
+  width: 60%;
+  height: 60%;
+  object-fit: contain;
+  transition: 0.3s;
+  transform: rotate(180deg);
+}
+
+.infograph__map-baackitem:hover {
+  background: #ff6600;
+}
+
+.infograph__map-baackitem:hover img {
+  background: #ff6600;
+}
+
+.infograph__map-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.infograph__map-title h2 {
+  font-size: 30px;
+  color: #4f5a6e;
+  margin: 0;
+  text-align: center;
+  padding: 0;
+}
+
+.infograph__map .uzbmap {
+  padding: 80px 0 0 0;
+  width: 100%;
+  margin: 0 auto;
+  transform: 0.3s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.infograph__map .uzbmap svg {
+  fill: #4f5a6e;
+}
+
+.infograph__map .uzbmap path {
+  transition: 0.3s;
+  cursor: pointer;
+  stroke-width: 2px;
+  stroke: #fff;
+}
+
+.infograph__map .uzbmap path.notregion {
+  fill: transparent;
+  pointer-events: none;
+  stroke-width: 0;
+}
+
+.infograph__map .uzbmap path:hover {
+  opacity: 0.3;
+}
+
+@media (max-width: 768px) {
+  .infograph__map {
+    padding: 0;
+  }
+
+  .infograph__map-baackitem {
+    width: 40px;
+    height: 40px;
+    left: 0;
+  }
+}
